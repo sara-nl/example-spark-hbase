@@ -1,0 +1,43 @@
+<configuration>
+
+    <property>
+        <name>hbase.security.authentication</name>
+        <value>kerberos</value>
+    </property>
+
+    <property>
+        <name>hbase.rpc.engine</name>
+        <value>org.apache.hadoop.hbase.ipc.SecureRpcEngine</value>
+    </property>
+
+    <property>
+        <name>hbase.regionserver.kerberos.principal</name>
+        <value>hbase/_HOST@CUA.SURFSARA.NL</value>
+    </property>
+
+    <property>
+        <name>hbase.master.kerberos.principal</name>
+        <value>hbase/_HOST@CUA.SURFSARA.NL</value>
+    </property>
+
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://hathi-surfsara/apps/hbase/data</value>
+    </property>
+
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>head07.hathi.surfsara.nl,head09.hathi.surfsara.nl,head11.hathi.surfsara.nl</value>
+    </property>
+
+    <property>
+        <name>hbase.bulkload.staging.dir</name>
+        <value>/tmp/hbase-staging</value>
+    </property>
+
+</configuration>
